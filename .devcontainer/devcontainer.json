@@ -1,18 +1,16 @@
-
 {
-  "name": "Verilog Container",
+  "name": "Verilog Codespace",
   "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
-  "postCreateCommand": "sudo apt update && sudo apt install -y iverilog gtkwave yosys",
+  "postCreateCommand": "sudo apt update && sudo apt install -y iverilog gtkwave yosys python3-pip && pip3 install yowasp-yosys",
   "customizations": {
     "vscode": {
       "extensions": [
-        "teros-technology.teroshdl",
         "wavetrace.vaporview",
-        "mshr-h.veriloghdl",
+        "leafvmaple.veriloghdl",
+        "teros-technology.teroshdl",
         "nicolasvuillamy.verilog-hdl-systemverilog",
         "vscode-icons-team.vscode-icons"
       ]
     }
   }
 }
-
